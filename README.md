@@ -9,19 +9,6 @@ It is a [Foxx Microservice](https://www.arangodb.com/why-arangodb/foxx/) for [Ar
 features _VCS-like_ semantics in many parts of its interface, and is backed by a transactional event tracker. It is
 currently being developed and tested on ArangoDB v3.6, with support for v3.7 in the pipeline.
 
-**Example: [A Time-Travelling Mind Map Tool](https://hivemind.vercel.app/).**
-
----
-
-[![Build Status](https://travis-ci.com/RecallGraph/RecallGraph.svg?branch=development)](https://travis-ci.com/github/RecallGraph/RecallGraph/branches)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adityamukho_evstore&metric=alert_status)](https://sonarcloud.io/dashboard?id=adityamukho_evstore)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=adityamukho_evstore&metric=coverage)](https://sonarcloud.io/component_measures?id=adityamukho_evstore&metric=coverage)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=adityamukho_evstore&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=adityamukho_evstore)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=adityamukho_evstore&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=adityamukho_evstore)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=adityamukho_evstore&metric=security_rating)](https://sonarcloud.io/dashboard?id=adityamukho_evstore)
-
----
-
 ## Do I Need a 'Versioned Graph' Database?
 To get an idea of where such a data store might be used, see:
 
@@ -37,7 +24,7 @@ Also, check out the recording below (RecallGraph presented @ ArangoDB Online Mee
 1. Documents (vertices/edges) mutate within their lifespan (both in their individual attributes/values and in their relations with each other).
 1. Past states of documents are as important as their present, necessitating retention and queryability of their change history.
 
-Refer to the [documentation](https://docs.recallgraph.tech/) for an in-depth introduction.
+Refer to the [documentation](https://adityamukho.gitbook.io/recallgraph-docs) for an in-depth introduction.
 
 ## API Features
 RecallGraph's API is split into 3 top-level categories:
@@ -71,7 +58,7 @@ RecallGraph installs like any other _Foxx Microservice_ inside a database, on an
 2. Follow the instructions in the [Foxx Deployment Manual](https://www.arangodb.com/docs/3.6/foxx-deployment.html). The web interface is the easiest, while the `foxx-cli` is more suitable for power users.
 
 ### Install From Source
-Refer to the [installation docs](https://docs.recallgraph.tech/working-with-recallgraph/installation#from-source) if you want to install from source.
+Refer to the [installation docs](https://adityamukho.gitbook.io/recallgraph-docs/working-with-recallgraph/installation#from-source) if you want to install from source.
 
 ## Documentation
 
@@ -84,7 +71,7 @@ Refer to the [installation docs](https://docs.recallgraph.tech/working-with-reca
 - API documentation is hosted at [Github Pages](https://recallgraph.github.io/RecallGraph/lib/handlers/providers.html).
 
 ### Concepts and Guides
-User guides, glossary and technical docs are available at the [main documentation website](https://docs.recallgraph.tech/).
+User guides, glossary and technical docs are available at the [main documentation website](https://adityamukho.gitbook.io/recallgraph-docs).
 
 ## Limitations
 1. Although the test cases are quite extensive and have good coverage, this service has only been tested on single-instance DB deployments, and **not on clusters**.
